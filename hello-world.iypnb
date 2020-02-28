@@ -1,0 +1,17 @@
+#HW1
+#program starts up
+print("This program will calculate your Body Mass Index")
+#asks users name
+name=input("Hello, what is your name?")
+#ask users weight in pounds
+weight=float(input("Please enter your weight in pounds:"))
+#ask user for height in feet
+hfeet=int(input("Plase enter your height in feet, whole numbers only:"))
+#ask user for height in inches
+hinch=int(input("...and how many inches on top of that?"))
+#convert total height to inches
+totalh=(hfeet*12)+hinch
+#calculate BMI with one decimal
+BMI=(weight*703)/(totalh**2)
+#provide message to user
+print("Hello", name,", Your BMI is", format(BMI, ".1f"),", Would you like fries with that?")
